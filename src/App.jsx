@@ -10,7 +10,7 @@ function App() {
                 </div>
                 <div className="flex w-full flex-col lg:flex-row gap-4 lg:gap-8">
                     <div
-                        className="min-h-[400px] flex-1 rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md bg-white/[0.02] border border-white/[0.05]">
+                        className="h-[500px] lg:min-h-[400px] lg:flex-1 rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md bg-white/[0.02] border border-white/[0.05]">
                         <div className="h-full w-full rounded-2xl overflow-hidden">
                             <FaceDetection/>
                         </div>
