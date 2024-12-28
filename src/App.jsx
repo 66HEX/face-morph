@@ -3,14 +3,37 @@ import BackgroundOverlay from "./Components/BackgroundOverlay/backgroundOverlay.
 
 function App() {
     return (
-        <div className="relative min-h-screen lg:h-svh w-full flex overflow-hidden">
+        <div className="relative h-svh w-full flex overflow-hidden">
+            <div className="fixed h-svh lg:hidden z-50 flex items-center justify-center bg-black/90 p-6">
+                <div className="max-w-md space-y-4 text-center">
+                    <div className="text-purple-400 text-4xl mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 className="text-xl font-semibold text-white">
+                        Desktop Device Required
+                    </h3>
+                    <p className="text-gray-300">
+                        This App requires a desktop device for optimal performance and tracking accuracy.
+                        Please open the application on a laptop or desktop computer for the best experience.
+                    </p>
+                    <div className="pt-4">
+                        <span className="text-sm text-purple-400">
+                            Required: Desktop device (1024px+)
+                        </span>
+                    </div>
+                </div>
+            </div>
             <div className="h-full w-full p-4 sm:p-8 lg:p-24 mb-32 xl:mb-0">
                 <div className="absolute inset-0">
                     <BackgroundOverlay/>
                 </div>
-                <div className="flex w-full flex-col lg:flex-row gap-4 lg:gap-8">
+                <div className="flex w-full flex-col xl:flex-row gap-4 lg:gap-8">
                     <div
-                        className="h-[500px] lg:min-h-[400px] lg:flex-1 rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md bg-white/[0.02] border border-white/[0.05]">
+                        className="h-[500px] xl:min-h-[400px] xl:flex-1 rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md bg-white/[0.02] border border-white/[0.05]">
                         <div className="h-full w-full rounded-2xl overflow-hidden">
                             <FaceDetection/>
                         </div>
