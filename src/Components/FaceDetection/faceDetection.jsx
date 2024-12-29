@@ -25,7 +25,7 @@ function Scene({ faceData }) {
         if (faceData) {
             setSmoothedPosition(prevPos =>
                 smoothPosition(prevPos, {
-                    x: (-faceData.position.x * 6.5) + 0.05,
+                    x: (-faceData.position.x * 8.5) + 0.05,
                     y: (faceData.position.y * 6.5) - 0.325,
                     z: faceData.position.z - 5
                 })
