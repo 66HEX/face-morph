@@ -28,8 +28,8 @@ Before you begin, ensure you have the following installed:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/face-tracking-mask.git
-cd face-tracking-mask
+git clone https://github.com/66HEX/face-morph.git
+cd face-morph
 ```
 
 2. Install dependencies:
@@ -70,7 +70,7 @@ The application uses your device's camera to track facial movements in real-time
 │   │       └── faceMesh.jsx          # 3D mask rendering
 │   ├── utils/
 │   │   └── detector.js               # Face detection utilities
-│   ├── index.css                 # Global styles
+    │   ├── index.css                 # Global styles
 │   ├── App.jsx                       # Main application component
 │   ├── main.jsx                      # Application entry point
 │   └── index.css                     # Tailwind directives and base styles
