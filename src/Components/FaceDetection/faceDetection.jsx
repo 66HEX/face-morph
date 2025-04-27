@@ -40,18 +40,18 @@ function Scene({ faceData }) {
             <group position={[smoothedPosition.x, smoothedPosition.y + 0.5, smoothedPosition.z]}>
                 <FaceMesh
                     face={faceData}
-                    width={faceData.box.width / 37.5}
+                    width={faceData.box.width / 35}
                     rotation-y={Math.PI}
                     wireframe={false}
                     castShadow
                     receiveShadow
                 >
                     <meshStandardMaterial
-                        side={THREE.DoubleSide}
-                        color={"#ffd800"}
+                        side={THREE.BackSide}
+                        color={"#FFFFFF"}
                         flatShading={false}
                         metalness={0.5}
-                        roughness={0.1}
+                        roughness={0.2}
                         wireframe={false}
                     />
                 </FaceMesh>
@@ -143,7 +143,6 @@ const FaceDetection = () => {
                 onLoadedData={handleVideoLoad}
                 mirrored={true}
             />
-            <div className="absolute top-0 left-0 w-full h-full bg-purple-950 opacity-50"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
 
             <div className="absolute top-0 left-0 w-full h-full">
