@@ -64,8 +64,6 @@ The application uses your device's camera to track facial movements in real-time
 │   ├── Components/
 │   │   ├── FaceDetection/
 │   │   │   └── faceDetection.jsx     # Main face detection component
-│   │   ├── BackgroundOverlay/
-│   │   │   └── backgroundOverlay.jsx  # Background gradient overlay
 │   │   └── FaceMesh/
 │   │       └── faceMesh.jsx          # 3D mask rendering
 │   ├── utils/
