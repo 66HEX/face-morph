@@ -2,34 +2,9 @@ import FaceDetection from "./Components/FaceDetection/faceDetection.jsx";
 
 function App() {
     return (
-        <div className="relative h-svh w-full flex overflow-hidden">
+        <div className="relative min-h-svh w-full flex overflow-hidden bg-black">
             <div className="absolute h-[500px] w-[500px] -right-[200px] -top-[200px] rounded-full bg-white blur-3xl opacity-[0.075]"></div>
             <div className="absolute h-[500px] w-[500px] -left-[200px] -bottom-[200px] rounded-full bg-white blur-3xl opacity-[0.075]"></div>
-
-
-            <div className="fixed h-svh lg:hidden z-50 flex items-center justify-center bg-black/90 p-6">
-                <div className="max-w-md space-y-4 text-center">
-                    <div className="text-purple-400 text-4xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 mx-auto" fill="none"
-                             viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3 className="text-xl font-semibold text-white">
-                        Desktop Device Required
-                    </h3>
-                    <p className="text-gray-300">
-                        This App requires a desktop device for optimal performance and tracking accuracy.
-                        Please open the application on a laptop or desktop computer for the best experience.
-                    </p>
-                    <div className="pt-4">
-                        <span className="text-sm text-purple-400">
-                            Required: Desktop device (1024px+)
-                        </span>
-                    </div>
-                </div>
-            </div>
             <div className="h-full w-full p-4 sm:p-8 lg:p-24 mb-32 xl:mb-0 bg-black">
                 <div className="flex w-full flex-col xl:flex-row gap-4 lg:gap-8">
                     <div
@@ -39,8 +14,7 @@ function App() {
                         </div>
                     </div>
                     <div className="flex-1 flex flex-col gap-4 lg:gap-6">
-                        <div
-                            className="rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
+                        <div className="rounded-2xl overflow-hidden p-4 sm:p-6 lg:p-8 backdrop-blur-md transform-gpu dark:bg-background dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
                             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2 lg:mb-4 py-2">
                                 Face Morph
                             </h1>
@@ -82,7 +56,7 @@ function App() {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-full p-4 text-gray-400 text-sm backdrop-blur-sm bg-black/20">
+            <div className="absolute bottom-0 left-0 w-full p-4 text-gray-400 text-sm backdrop-blur-sm ">
                 <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
                     <div>
                         Created by <a href="https://hexthecoder.pl" target="_blank" rel="noopener noreferrer"

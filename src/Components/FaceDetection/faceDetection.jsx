@@ -69,7 +69,7 @@ const FaceDetection = () => {
     const [videoDimensions, setVideoDimensions] = useState({ width: 400, height: 500 });
 
     const previousFaceData = useRef(null);
-    const MOVEMENT_THRESHOLD = 0.0015;
+    const MOVEMENT_THRESHOLD = 0.001;
 
     const isSignificantMovement = (newFace, oldFace) => {
         if (!oldFace) return true;
@@ -155,7 +155,7 @@ const FaceDetection = () => {
                 <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm">
                     <div className="flex flex-col items-center gap-3">
                         <div
-                            className="w-8 h-8 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"/>
+                            className="w-8 h-8 border-4 border-white border-t-transparent rounded-full animate-spin"/>
                         <p className="text-white text-lg">{loadingMessage}</p>
                     </div>
                 </div>
